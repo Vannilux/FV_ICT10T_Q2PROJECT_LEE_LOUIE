@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://pyscript.net/releases/2024.1.1/core.css" />
+    <script type="module" src="https://pyscript.net/releases/2024.1.1/core.js"></script>
+
+    <title>Skills Test</title>
+
+    <style>
+
+    body {
+    background-color: #f0f2f5;
+    font-family: sans-serif;
+    background-image: url("https://media1.tenor.com/m/6_6sYTK265sAAAAC/pokemon.gif");
+    background-repeat: no-repeat;
+    background-size: cover; 
+    }
+
+    .navbar {
+    padding: 1rem 2rem;
+    border-bottom: 1px solid var(--border-color);
+    background-color: rgb(255, 255, 255);
+    }
+
+    .navbar-brand {
+    display: flex;
+    align-items: center;
+    font-weight: 700;
+    color: var(--text-main);
+    text-decoration: none;
+    }
+
+    .nav-link {
+    color: #4b5563;
+    font-weight: 500;
+    margin: 0 10px;
+    }
+
+    .nav-link.active-page {
+    color: var(--rail-blue);
+    font-weight: 700;
+    }
+
+    footer {
+    border-top: 1px solid var(--border-color);
+    padding: 60px 0 30px 0;
+    margin-top: 40px;
+    }
+
+    #div1 {
+    background-color: rgb(174, 234, 62);
+    padding: 30px;
+    border-radius: 10px;
+    max-width: 500px;
+    margin: 50px auto;
+    text-align: center;
+    box-shadow: 0px 4px 10px rgba(0,0,0,0.4)
+   }
+
+   #element1 {
+    background-color: rgb(244, 244, 244);
+    padding: 10px;
+    border-radius: 8px;
+    box-shadow: 0px 4px 10px rgba(0,0,0,0.4)
+   }
+
+   #output1 {
+    background-color: rgb(244, 244, 244);
+    padding: 10px;
+    border-radius: 8px;
+    box-shadow: 0px 4px 10px rgba(0,0,0,0.4)
+   }
+
+   .btn-black {
+      background-color: #000;
+      color: white;
+      width: 100%;
+      font-weight: bold;
+      padding: 10px;
+    }
+
+    .btn-black:hover {
+        background-color: #333;
+    }
+    </style>
+</head>
+
+<body>
+
+    <nav class="navbar navbar-expand-lg navbar-light bg-white border-bottom">
+    <div class="container">
+    <ul class="navbar-nav">
+    <li class="nav-item"><a class="nav-link" href="index.html">SS Club Checker</a></li>
+        <li class="nav-item"><a class="nav-link" href="page2.html">About Me</a></li>
+        <li class="nav-item"><a class="nav-link" href="page3.html">Element Finder</a></li>
+        <li class="nav-item"><a class="nav-link" href="page4.html">SS Club Admission Checker</a></li>
+    </ul>
+    </div>
+    </nav>
+
+    <div class="container" id="div1">
+        <h1>Element Checker</h1>
+        <p>Enter an element name</p>
+        <input type="text" id="element1" placeholder="Enter Element" aria-label="Element lookup">
+        <br><br>
+        <button type="button" class="btn btn-black" py-click="search_element">Search Element</button>
+        <br><br>
+
+        <div class="result" id="output1">
+            <h3>Element Information</h3>
+            <p><b>Symbol:</b> <span id="symbol">-</span></p>
+            <p><b>Element:</b> <span id="element">-</span></p>
+            <p><b>Atomic Number:</b> <span id="ANUM">-</span></p>
+            <p><b>Atomic Mass:</b> <span id="AMASS">-</span></p>
+        </div>
+    </div>
+
+    <script type="py" src="main.py"></script>
+
+</body>
+</html>
